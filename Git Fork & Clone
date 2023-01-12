@@ -1,0 +1,58 @@
+Difference between Git Clone and Git Fork
+
+Previous Lesson
+What is Git Clone & How to Clone a Repository?
+Next Lesson
+SSH Protocol in Git
+Throughout these two tutorials about Forking in GitHub and Cloning in GitHub, the reader might have got confused with the two terms and the Difference between Git Clone and Git Fork. It is not surprising that people sometimes consider these terms as similar.
+
+Difference between Git Clone and Git Fork
+Since first you need to fork before cloning, although forking does not come as a strict pre-step for cloning. People of an organization working on a repository do not generally fork the repository. We have created this tutorial just to focus on the difference and make you clear about these two concepts viz. Git Cloning and Git Forking. This tutorial will help you understand:
+
+Difference between cloning and forking
+Workflow of forking and cloning on GitHub
+Why cloning and forking are used interchangeably?
+What are the major differences between Forking and Cloning?
+To clear out the air from your mind, if you have any, let see how these two terms differ:
+
+Forking is done on the GitHub Account while Cloning is done using Git. When you fork a repository, you create a copy of the original repository (upstream repository) but the repository remains on your GitHub account. Whereas, when you clone a repository, the repository is copied on to your local machine with the help of Git.
+Difference-between-Git-Clone-and-Git-Fork
+
+
+Changes made to the forked repository can be merged with the original repository via a pull request. Pull request knocks the repository owner and tells that "I have made some changes, please merge these changes to your repository if you like it". On the other hand, changes made on the local machine (cloned repository) can be pushed to the upstream repository directly. For this, the user must have the write access to the repository otherwise this is not possible. If the user does not have write access, the only way to go is through the forked request. So in that case, the changes made in the cloned repository are first pushed to the forked repository and then a pull request is created. It is a better option to fork before clone if the user is not declared as a contributor and it is a third-party repository (not of the organization).Difference-between-Git-Cloning-and-Git-Forking
+
+Forking is a concept while cloning is a process. Forking is just containing a separate copy of the repository and there is no command involved. Cloning is done through the command 'git clone' and it is a process of receiving all the code files to the local machine.
+
+Flow Process with Fork and Clone in GitHub
+The process of forking and cloning usually follows the following route:
+
+Cloning a Git Repo without Fork
+Cloning is a three steps process:
+
+Step 1: Clone a Repository: The user starts from the upstream repository on GitHub. Since the user navigated to the repository because he/she is interested in the concept and they like to contribute. This process starts from cloning when they clone the repository it into their local machine. Now they have the exact copy of the project files on their system to make the changes.
+Step 2: Make the desired changes: After cloning, contributors provide their contribution to the repository. Contribution in the form of editing the source files resulting in either a bug fix or adding functionality or maybe optimizing the code. In this step, a contributor can apply a single commit or multiple commits to the repository. But the bottom line is, everything happens on their local system.
+Step 3: Pushing the Changes: Once the changes or commits are done and now the modifications can be pushed to the upstream repository. *
+Git-Clone
+
+Cloning a Git Repo after Forking
+Forking a Repository is a five steps process but three steps are exactly the same as cloning. Only the first and the last forking step differs from cloning.
+
+Step 1: Fork a Repository: Again the user starts from the upstream repository on GitHub but this process starts from forking when they fork a repository to their own GitHub account.
+Step 2: Clone a Repository: Same as cloning.
+Step 3: Make the desired changes: Same as cloning.
+Step 4: Pushing the Changes: Same as cloning.
+Step 5: Send changes to Original Repository: This process is called Pull Request in Git. At this step, the user sends the changes to the owner of the repository as a request to merge the changes to the main central repository .
+1_Pull-Request
+
+Is Cloning a part of Forking?
+Now when you have an idea on the Difference between Git Clone and Git Fork, a good question if you are wondering about is cloning a part of forking?
+
+To understand this, let us go back to the era before 2008 i.e. the pre-git era (if that term even exists). The open-source community is in full demand and people are experimenting and inventing technologies and software, no one has imagined. These open-source communities are experimenting with their own features and modifications and as a matter of fact, almost all of them have a feature called fork.
+
+Fork in the pre-git era was cloning the software or anything that the user wants a personal copy of. If I fork a document, let say this post only, I will have the same document on my account i.e. I will have a copy of this document. I can now use it, edit it modify it and if I want, I can send it back to the owner with some modification.
+
+Then came GitHub. GitHub, like every other open-source, had a concept of the fork. Now, focus on the word concept that I have used to describe fork in GitHub. Forking in GitHub would create the same effect as other open-source platforms but the user was not able to edit the code. For this, they explicitly defined a command called git clone to clone the repository to work on it.
+
+So, forking is a concept while cloning is a command in Git. Forking just acts as a middleman between the user and the upstream repository. Therefore, if you visit any other open-source community, you would find forking and cloning as the same concept, and people using that in an interchangeable way in the community.
+
+I hope the cloning and forking concepts are clear and how the process normally flows in Git and GitHub is also understood. Always remember to use these words carefully when the reference is Git. These concepts are of high importance and I hope you have understood them well to use them in future tutorials.
